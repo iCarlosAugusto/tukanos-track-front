@@ -12,7 +12,7 @@ const TotpQrCodeButton = ({ email, totpKey }) => {
     return null;
   }
 
-  const issuer = encodeURIComponent(title || 'Traccar');
+  const issuer = encodeURIComponent(title || 'Tukanos Track');
   const account = encodeURIComponent(email);
   const secret = encodeURIComponent(totpKey);
   const uri = `otpauth://totp/${issuer}:${account}?secret=${secret}&issuer=${issuer}`;
